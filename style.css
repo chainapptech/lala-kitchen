@@ -1,0 +1,364 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+:root{
+    --green:rgba(73,133,0,1);
+    --lightgray:rgb(239, 239, 239);
+    --gray:rgb(95,95,95);
+}
+@font-face {
+    font-family: Niconne;
+    src: url(Niconne-Regular.ttf);
+  }
+  @font-face {
+    font-family: Alex Brush;
+    src: url(AlexBrush-Regular.ttf);
+  }
+  
+body{
+    margin: 0;
+}
+.logo-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--lightgray);
+}
+.social {
+    margin-top: 24px;
+    margin-left: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    width: 190px;
+    height: 44px;
+}
+.contact{
+    margin-top: 24px;
+    margin-right: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-family: Helvetica;
+    font-weight: 400;
+    width: 460px;
+    height: 44px;
+    color: var(--green);
+}
+.book-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 205px;
+    height: 44px;
+    border:none;
+    color: var(--gray);
+    font-weight: 400;
+}
+.cake-calculator{
+    display: flex;
+    width: 245px;
+    height: 44px;
+    background-color: var(--green);
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.anchor{
+    text-decoration: none;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    margin-left: 200px;
+    width: 103px;
+    height: 170px;
+}
+.lala-text{
+    font-family: Niconne !important;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--green);
+    letter-spacing: 0.2px;
+    line-height: 1;
+    text-align: center;
+}
+.kitchen-text{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: var(--green);
+    letter-spacing: 5px;
+    line-height: 1;
+}
+@media screen and (max-width: 1060px) {
+    .logo-container {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .contact{
+        margin-right: 0;
+    }
+    .social{
+        margin-left: 0;
+    }
+    .logo{
+        margin-left: 0;
+    }
+    .main-menu{
+        flex-direction: column-reverse !important;
+        height: auto !important;
+    }
+    .main-menu-image-container{
+        width: 80% !important;
+        margin: 0;
+    }
+    .main-menu-background{
+        width: 80% !important;
+        margin-right: 0 !important;
+    }
+   
+}
+@media screen and (max-width: 900px) {
+    .most-popular-menu-items{
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .item-picture{
+        width: fit-content !important;
+        height: auto !important;
+    }
+    .item-text-content{
+        text-align: center;
+    }
+    .item-text-title{
+        text-align: center !important;
+    }
+}
+
+.main-menu{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    width: 100%;
+    height: 580px;
+    background-color: var(--lightgray);
+}
+.main-menu-background{
+    height: 90%;
+    width:32%;
+    margin-right: 20px;
+    background-color: var(--lightblue);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main-menu-image-container{
+    height: 100%;
+    width: 45%;
+}
+
+.main-menu-title , .middle-text-title, .most-popular-menu-title, 
+.bottom-menu-title , .about-me-title{
+    font-weight: bolder;
+    font-size: 34px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.item-text-title ,.bottom-text-title , .profile-text-title{
+    text-align: left;
+    font-weight: bolder;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.main-menu-content , .middle-text-content, .item-text-content ,
+ .bottom-text-content , .profile-text-content ,.about-me-content{
+    font-size: 17px;
+    font-weight: 400;
+    color:var(--gray);
+    line-height: 1.5;
+}
+.main-menu-image{
+    width: 100%;
+    height: 100%;
+}
+.main-menu-profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.profile-picture{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.profile-text{
+    margin-left: 20px;
+}
+.booking-calendar-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 390px;
+    height: 44px;
+    font-size: 16px;
+    font-family: Helvetica;
+    font-weight: 400;
+    background-color: var(--green);
+    color:white;
+}
+.calendar-logo {
+    margin-right: 12px;
+}
+.middle-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--lightgray);
+}
+.middle-text-inner-div{
+    position: relative;
+    margin-top: 25px;
+    background-color: white;
+    width: 70%;
+}
+.most-popular-menu-title, .bottom-menu-title{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 50px 140px;
+}
+.bottom-menu-title{
+    padding: 50px 90px;
+}
+.most-popular-menu-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.item-one, .item-two , .item-three{
+    display: flex;
+    margin-right: 15px;
+    flex-direction: column;
+    
+}
+.item-picture {
+    width: 340px;
+    height: 430px;
+}
+.picture{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 1150px) {
+    .bottom-menu-container{
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center !important;
+    }    
+    .bottom-menu{
+        width: 90% !important;
+    }
+    .about-me-container{
+        width: 60% !important;
+    }
+}
+.bottom-menu-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.bottom-menu{
+    display: grid;
+    width: 60%;
+    grid-template-columns: repeat(auto-fill,minmax(330px,1fr)) ;
+    gap: 3rem 1rem;
+}
+.about-me-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 25%;
+}
+.about-me{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    border: 1px solid var(--gray);
+}
+.about-me-picture{
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+}
+.about-me-signature{
+    font-family: Alex Brush,serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--gray);
+    letter-spacing: 0.2px;
+    padding-top: 30px;
+    text-align: center;
+}
+.about-me-title{
+    text-align: center;
+}
+.about-me-content{
+    text-align: center;
+}
+.bottom-menu-picture .bottom-menu-text{
+    width: 350px;
+    height: 270px;
+}
+.tulip-big{
+    position: absolute;
+    display: block; 
+    flex-shrink: 0; 
+    user-select: none; 
+    pointer-events: none; 
+    width: 64px; 
+    height: 59px; 
+    overflow: hidden; 
+    transform: none;
+}
+.tulip-big-1{
+    top: 200px; 
+    left: 200px; 
+}
+.tulip-big-2{
+    top: 120px; 
+    right: 300px; 
+}
+.tulip-big-3{
+    top: 0px; 
+    right: 450px; 
+}
+.tulip-big-4{
+    top: 70px; 
+    left: 70px; 
+}
+.tulip-big-5{
+    top: 40px; 
+    left: 600px; 
+}
+.tulip-big-6{
+    top: 10px; 
+    left: 760px; 
+}
+
