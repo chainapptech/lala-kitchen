@@ -5,14 +5,15 @@
     --green:rgba(73,133,0,1);
     --lightgray:rgb(239, 239, 239);
     --gray:rgb(95,95,95);
+    --facebook:
 }
 @font-face {
     font-family: Niconne;
-    src: url(Niconne-Regular.ttf);
+    src: url(./assets/fonts/Niconne-Regular.ttf);
   }
   @font-face {
     font-family: Alex Brush;
-    src: url(AlexBrush-Regular.ttf);
+    src: url(./assets/fonts/AlexBrush-Regular.ttf);
   }
   
 body{
@@ -70,6 +71,13 @@ body{
 }
 .anchor{
     text-decoration: none;
+    transition: .2s;
+}
+.anchor:hover{
+    transform: scale(1.08,1.08);
+}
+.anchor:active{
+    transform: scale(.9,.9);
 }
 
 .logo{
@@ -168,7 +176,7 @@ body{
 }
 
 .main-menu-title , .middle-text-title, .most-popular-menu-title, 
-.bottom-menu-title , .about-me-title{
+.bottom-menu-title , .about-me-title , .follow-me{
     font-weight: bolder;
     font-size: 34px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -217,9 +225,21 @@ body{
     font-weight: 400;
     background-color: var(--green);
     color:white;
+    transition: 0.5s;
+}
+.booking-calendar-button:hover {
+    background-color: var(--lightgray);
+    color: var(--gray);
+}
+.booking-calendar-button:hover img{
+   filter: none;
 }
 .calendar-logo {
     margin-right: 12px;
+}
+.calendar-logo-img{
+    filter: invert(99%) sepia(6%) saturate(282%) hue-rotate(271deg) brightness(115%) contrast(100%);
+    transition: .6s;
 }
 .middle-text{
     display: flex;
@@ -227,6 +247,7 @@ body{
     justify-content: center;
     text-align: center;
     background-color: var(--lightgray);
+    background-image: linear-gradient(180deg, var(--lightgray),white);
 }
 .middle-text-inner-div{
     position: relative;
@@ -263,6 +284,17 @@ body{
     width: 100%;
     height: 100%;
 }
+.follow-me-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.follow-me-social{
+    margin-left:0;
+}
 @media screen and (max-width: 1150px) {
     .bottom-menu-container{
         flex-direction: column !important;
@@ -288,11 +320,23 @@ body{
     gap: 3rem 1rem;
 }
 .about-me-container{
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
-    
     width: 25%;
+}
+.about-me-border-text{
+    position: absolute;
+    left: 40%;
+    top: -7px;
+    height: 14px;
+    width: 68 px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: white;
+    font-size: 12px;
+    font-family: sans-serif;
 }
 .about-me{
     display: flex;
@@ -321,6 +365,9 @@ body{
 }
 .about-me-content{
     text-align: center;
+}
+.about-me-social{
+    margin-left: 0;
 }
 .bottom-menu-picture .bottom-menu-text{
     width: 350px;
@@ -360,5 +407,9 @@ body{
 .tulip-big-6{
     top: 10px; 
     left: 760px; 
+}
+.tulip-big-7{
+    top: 10px; 
+    left: 360px; 
 }
 
