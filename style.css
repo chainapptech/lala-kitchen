@@ -2,10 +2,12 @@
     box-sizing: border-box;
 }
 :root{
-    --green:rgba(73,133,0,1);
-    --lightgray:rgb(239, 239, 239);
+    --green: #498500;
+    --darkgreen:#2d5201;
+    --lightgray:rgb(239, 242, 245);
     --gray:rgb(95,95,95);
-    --facebook:
+    --darkgray:rgb(33,33,33);
+    --disabledgray:#BFCDCA;
 }
 @font-face {
     font-family: Niconne;
@@ -19,26 +21,54 @@
 body{
     margin: 0;
 }
+.navbar{
+    width: 100%;
+    height: 88px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: var(--lightgray);
+   
+}
 .logo-container{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     background-color: var(--lightgray);
+    
 }
 .social {
-    margin-top: 24px;
-    margin-left: 32px;
+    /* margin-top: 24px;
+    margin-left: 32px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
-    width: 190px;
-    height: 44px;
+    width: 216px;
+    height: 56px;
+   
+}
+.facebook ,.instagram,.youtube{
+    display: flex;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    transition: .2s;
+    justify-content: center;
+    align-items: center;
+   
+}
+.facebook:hover ,.instagram:hover{
+    border:2px solid var(--darkgray);
 }
 .contact{
-    margin-top: 24px;
-    margin-right: 24px;
+    /* margin-top: 24px;
+    margin-right: 24px; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -46,30 +76,48 @@ body{
     font-size: 16px;
     font-family: Helvetica;
     font-weight: 400;
-    width: 460px;
-    height: 44px;
+    width: 490px;
+    height: 56px;
     color: var(--green);
+   
 }
 .book-me{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 205px;
-    height: 44px;
+    width: 208px;
+    height: 56px;
     border:none;
-    color: var(--gray);
+    color: var(--green);
+    border: 2px solid var(--green);
     font-weight: 400;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    transition: .4s;
+}
+.book-me:hover {
+    border: 2px solid var(--darkgreen);
+    background-color: #F5FAEB;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .cake-calculator{
     display: flex;
     width: 245px;
-    height: 44px;
-    background-color: var(--green);
-    color: white;
+    height: 56px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--disabledgray);
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
 }
 .anchor{
+    text-decoration: none;
+}
+/* .anchor{
     text-decoration: none;
     transition: .2s;
 }
@@ -78,15 +126,14 @@ body{
 }
 .anchor:active{
     transform: scale(.9,.9);
-}
+} */
 
 .logo{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 24px;
-    margin-left: 200px;
+    margin-top: 20px;
     width: 103px;
     height: 170px;
 }
@@ -108,18 +155,9 @@ body{
     line-height: 1;
 }
 @media screen and (max-width: 1060px) {
-    .logo-container {
+    .navbar {
       flex-direction: column-reverse;
       align-items: center;
-    }
-    .contact{
-        margin-right: 0;
-    }
-    .social{
-        margin-left: 0;
-    }
-    .logo{
-        margin-left: 0;
     }
     .main-menu{
         flex-direction: column-reverse !important;
@@ -150,6 +188,10 @@ body{
     .item-text-title{
         text-align: center !important;
     }
+    .life-school-container{
+        flex-direction: column !important;
+        align-items: center;
+    }
 }
 
 .main-menu{
@@ -176,7 +218,7 @@ body{
 }
 
 .main-menu-title , .middle-text-title, .most-popular-menu-title, 
-.bottom-menu-title , .about-me-title , .follow-me{
+.bottom-menu-title , .about-me-title , .follow-me, .cake-text-title {
     font-weight: bolder;
     font-size: 34px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -189,11 +231,14 @@ body{
 
 }
 .main-menu-content , .middle-text-content, .item-text-content ,
- .bottom-text-content , .profile-text-content ,.about-me-content{
+ .bottom-text-content , .profile-text-content ,.about-me-content  {
     font-size: 17px;
     font-weight: 400;
     color:var(--gray);
     line-height: 1.5;
+}
+.profile-text-content{
+    color: var(--green);
 }
 .main-menu-image{
     width: 100%;
@@ -274,7 +319,20 @@ body{
     display: flex;
     margin-right: 15px;
     flex-direction: column;
-    
+}
+.life-school-container{
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.item-1 , .item-2 , .item-3{
+    display: flex;
+    flex-direction: column;
+}
+.picture-1{
+    width: 350px;
+    height: 169px;
 }
 .item-picture {
     width: 340px;
@@ -289,11 +347,77 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 70px;
 }
 
 .follow-me-social{
     margin-left:0;
+    margin-top: 20px;
+}
+.flippig-card-container{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--lightgray) ;
+}
+.cake-picture-container{
+    width: 50%;
+}
+.cake-picture{
+    width: 100%;
+    height: 670px;
+}
+.cake-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: var(--lightgray) !important;
+}
+.cake-text-inner-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 50%;
+}
+.cake-button{
+    text-decoration: none;
+}
+.cake-button-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    height: 56px;
+    font-size: 16px;
+    font-family: Helvetica;
+    font-weight: 400;
+    color: var(--green);
+    border:2px solid var(--green);
+    transition: .4s;
+}
+.cake-button-container:hover{
+    border: 2px solid var(--darkgreen);
+    background-color: #F5FAEB;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.cake-icon{
+    margin-right: 8px;
+}
+.cake-text-content{
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: #3B3C45;
 }
 @media screen and (max-width: 1150px) {
     .bottom-menu-container{
@@ -368,6 +492,7 @@ body{
 }
 .about-me-social{
     margin-left: 0;
+    margin-top: 20px;
 }
 .bottom-menu-picture .bottom-menu-text{
     width: 350px;
@@ -411,5 +536,49 @@ body{
 .tulip-big-7{
     top: 10px; 
     left: 360px; 
+}
+.container{
+    position: relative;
+    width: 900px;
+    height: 300px;
+}
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.card{
+    cursor: pointer;
+    width: 50%;
+    height: 100%;
+}
+.front , .back {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+}
+.front img{
+    height: 100%;
+}
+.front{
+    transform: perspective(600px) rotateY(0deg);
+}
+.back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
 }
 
