@@ -140,8 +140,8 @@
     <div class="life-school-container">
 
         <div class="item-1">
-            <div class="item-picture-life-school">
-                <img class="picture-1" src="./assets/images/item-1.png" alt="picture-1">
+            <div class="item-picture-life-school parent">
+                <div class="picture-1 child" ></div>
             </div>
             <div class="item-text">
                 <p class="item-text-title">
@@ -151,8 +151,8 @@
             </div>
         </div>
         <div class="item-2">
-            <div class="item-picture-life-school">
-                <img class="picture-1" src="./assets/images/item-2.png" alt="picture-2">
+            <div class="item-picture-life-school parent">
+                <img class="picture-1 child" src="./assets/images/item-2.png" alt="picture-2">
             </div>
             <div class="item-text">
                 <p class="item-text-title">You just become a mom</p>
@@ -160,8 +160,8 @@
             </div>
         </div>
         <div class="item-3">
-            <div class="item-picture-life-school">
-                <img class="picture-1" src="./assets/images/item-3.png" alt="picture-3">
+            <div class="item-picture-life-school parent">
+                <img class="picture-1 child" src="./assets/images/item-3.png" alt="picture-3">
             </div>
             <div class="item-text">
                 <p class="item-text-title">
@@ -224,8 +224,8 @@
     </div>
     <div class="most-popular-menu-items">
         <div class="item-one">
-            <div class="item-picture">
-                <img class="picture" src="./assets/images/item-a.png" alt="picture-1">
+            <div class="item-picture parent">
+                <img class="picture child" src="./assets/images/item-a.png" alt="picture-1">
             </div>
             <div class="item-text">
                 <p class="item-text-title-1">Cabbage rolls</p>
@@ -240,8 +240,8 @@
             </div>
         </div>
         <div class="item-two">
-            <div class="item-picture">
-                <img class="picture" src="./assets/images/item-b.png" alt="picture-2">
+            <div class="item-picture parent">
+                <img class="picture child" src="./assets/images/item-b.png" alt="picture-2">
             </div>
             <div class="item-text">
                 <p class="item-text-title-1">Biscotto</p>
@@ -258,8 +258,8 @@
             </div>
         </div>
         <div class="item-three">
-            <div class="item-picture">
-                <img class="picture" src="./assets/images/item-c.png" alt="picture-3">
+            <div class="item-picture parent">
+                <img class="picture child" src="./assets/images/item-c.png" alt="picture-3">
             </div>
             <div class="item-text">
                 <p class="item-text-title-1">
@@ -279,11 +279,8 @@
    
     <!-- -------------------------flipping card --------------------------------------------- -->
     <div class="flippig-card-container">
-        <div class="cake-picture-container">
-            <img class="cake-picture" src="./assets/images/IMG_1038_jpg.jpg" alt="cake-picture">
-        </div>
-        <div class="dark-side">
-            
+        <div class="cake-picture-container parent">
+            <img class="cake-picture child" src="./assets/images/IMG_1038_jpg.jpg" alt="cake-picture">
         </div>
         <div class="cake-text">
             <div class="cake-text-inner-container">
@@ -315,7 +312,7 @@
         <div class="card middle">
             
             <div class="front">
-                <img src="./assets/images/item-1.png" alt="safsdf">
+                <img src="./assets/images/hover-me.jpeg" alt="safsdf">
             </div>
             <div class="back">
                 <div class="follow-me">Follow me</div>
@@ -354,14 +351,16 @@
     </div>
     <!-- ------------------------------------Promoted card----------------- -->
     <div class="promoted-card-container">
-        <div class="promoted-card-image">
-            <img src="./assets/images/cake-cup.png" alt="promoted card">
-            <div class="promoted-card-top-order-button">
-                <div class="promoted-card-top-order-button-icon">
-                    <img src="./assets/icons/star.png" alt="star-icon">
+        <div class="promoted-card-image parent">
+            <img class="child" src="./assets/images/cake-cup.png" alt="promoted card">
+            <a href="" class="anchor">
+                <div class="promoted-card-top-order-button">
+                    <div class="promoted-card-top-order-button-icon">
+                        <img src="./assets/icons/star.png" alt="star-icon">
+                    </div>
+                    <div class="promoted-card-top-order-button-content">Top order</div>
                 </div>
-                <div class="promoted-card-top-order-button-content">Top order</div>
-            </div>
+            </a>
         </div>
         <div class="promoted-card-text-container">
             <div class="promoted-card-text">
@@ -374,8 +373,11 @@
                 </p>
                 <p class="promoted-card-content">
                 Go straight to cake calculator and 
-                    configure your own.</p>
+                    configure your own.
+                </p>
+                <a href="" class="anchor">
                     <div class="promoted-card-text-button">Order now</div>
+                </a>
             </div>
         </div>
     </div>
