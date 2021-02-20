@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+h1{
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.05em;
+}
+h2{
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0.08em;
+}
+h3{
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.09em;
+}
+h4{
+
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+h5{
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+}
+h6{
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+    
+p{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+}
+
+small{
+    
+    font-size: 12px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+}
+
+
+
+.body-caption{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+
+}
+
+
+
