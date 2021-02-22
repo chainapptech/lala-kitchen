@@ -37,8 +37,14 @@ src: url(./assets/fonts/AlexBrush-Regular.ttf);
 }
 /*heders od h1 do h6*/
 body{
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
 }
+button{
+    border: 0px;
+    background-color: inherit;
+}
+/* --------------------------nav bar ------------------------------ */
 .navbar{
     width: 100%;
     height: 88px;
@@ -49,8 +55,7 @@ body{
     padding-top: 32px;
     padding-left: 32px;
     padding-right: 32px;
-    background-color: var(--lightgray);
-   
+    background-color: var(--N100);
 }
 .logo-container{
     display: flex;
@@ -60,8 +65,6 @@ body{
     background-color: var(--N100);
 }
 .social {
-    /* margin-top: 24px;
-    margin-left: 32px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,7 +72,7 @@ body{
     width: 216px;
     height: 56px;
 }
-.facebook ,.instagram,.youtube{
+.facebook ,.instagram,.youtube ,.facebook-real,.instagram-real, .youtube-real{
     display: flex;
     width: 56px;
     height: 56px;
@@ -78,12 +81,10 @@ body{
     justify-content: center;
     align-items: center;
 }
-.facebook:hover ,.instagram:hover{
-    border:2px solid var(--darkgray);
+.facebook:hover ,.instagram:hover , .facebook-real:hover, .instagram-real:hover{
+    border:1px solid var(--N900);
 }
 .contact{
-    /* margin-top: 24px;
-    margin-right: 24px; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -93,7 +94,7 @@ body{
     font-weight: 400;
     width: 490px;
     height: 56px;
-    color: var(--green);
+    color: var(--G500);
 }
 .book-me{
     display: flex;
@@ -145,7 +146,7 @@ body{
 .anchor:active{
     transform: scale(.9,.9);
 } */
-
+/* ----------------------------------logo container-------------------- */
 .logo{
     display: flex;
     flex-direction: column;
@@ -214,7 +215,7 @@ body{
         align-items: center;
     }
 }
-
+/* --------------------------chef as a service--------------- */
 .main-menu{
     position: relative;
     display: flex;
@@ -224,189 +225,17 @@ body{
     padding-top: 50px;
     width: 100%;
     height: 580px;
-    background-color: var(--lightgray);
+    background-color: var(--N100);
 }
 .main-menu-background{
     height: 90%;
     width:32%;
     margin-right: 20px;
-    background-color: var(--lightblue);
+    background-color: var(--N100);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.main-menu-image-container{
-    height: 100%;
-    width: 45%;
-}
-/* -----------------------fontovi down------------------------*/
-.main-menu-title {
-    font-family: Merriweather;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 48px;
-    /* letter-spacing: 0.05em; */
-    color: var(--N900);
 }
 .main-menu-content{
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    /* letter-spacing: 0.03em; */
     color: var(--N700);
-}
-.profile-text-title{
-    font-family: Merriweather;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 18px;
-    line-height: 22px;
-    color: #000000;
-}
-.profile-text-content{
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    /* letter-spacing: 0.03em; */
-    color: var(--G500);
-}
-.middle-text-title{
-    font-family: Merriweather;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 42px;
-    text-align: center;
-    color: var(--N900);
-    /* letter-spacing: 0.08em; */
-}
-.middle-text-content{
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    /* letter-spacing: 0.03em; */
-    color:var(--N700);
-}
-.item-text-title {
-    font-family: Merriweather;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    /* letter-spacing: 0.03em; */
-    color: var(--N700);
-}
-.follow-me,.most-popular-menu-title{
-    font-family: Merriweather;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 42px;
-    text-align: center;
-    /* letter-spacing: 0.08em; */
-    color:var(--N900);
-}
-.item-text-title-1{
-    font-family: Merriweather;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 32px;
-    /* letter-spacing: 0.09em; */
-    color: var(--N900);
-}
-.item-text-content{
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    /* letter-spacing: 0.03em; */
-    color: var(--N700);
-}
-.cake-text-title{
-    font-family: Merriweather;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 42px;
-    /* letter-spacing: 0.08em; */
-    color: var(--N900);
-}
-.cake-text-content{
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    /* letter-spacing: 0.03em; */
-    color: var(--N700);
-}
-.about-me-title{
-    font-family: Merriweather;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: center;
-    /* letter-spacing: 0.09em; */
-    color: var(--N700);
-}
-.about-me-content {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    /* letter-spacing: 0.03em; */
-    color: var(--N700);
-}
-.about-me-signature{
-    font-family: Alex Brush;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: center;
-    /* letter-spacing: 0.09em; */
-    color: var(--N700);
-}
-.bottom-menu-title  {
-    font-weight: bolder;
-    font-size: 34px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.promoted-card-title{
-    font-family: Merriweather;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 42px;
-    /* letter-spacing: 0.08em; */
-    color: var(--N900);
-}
-.promoted-card-content ,.promoted-card-text-button{
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    /* letter-spacing: 0.03em; */
-    color: var(--N700);
-}
-/* -----------------------fontovi above------------------------*/
-.main-menu-image{
-    width: 100%;
-    height: 100%;
 }
 .main-menu-profile{
     display: flex;
@@ -422,22 +251,32 @@ body{
 .profile-text{
     margin-left: 20px;
 }
+.profile-text-name,.profile-text-email{
+    margin: 0px;
+}
+.profile-text-name{
+    color: var(--N900);
+}
+.profile-text-email{
+    color: var(--G500);
+}
 .booking-calendar-button{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    margin-top: 10px;
     width: 390px;
     height: 44px;
     font-size: 16px;
     font-family: Helvetica;
     font-weight: 400;
-    background-color: var(--green);
+    background-color: var(--G500);
     color:white;
     transition: 0.5s;
 }
 .booking-calendar-button:hover {
-    background-color: var(--lightgray);
+    background-color: var(--N100);
     color: var(--gray);
 }
 .booking-calendar-button:hover img{
@@ -450,13 +289,22 @@ body{
     filter: invert(99%) sepia(6%) saturate(282%) hue-rotate(271deg) brightness(115%) contrast(100%);
     transition: .6s;
 }
+.main-menu-image-container{
+    height: 100%;
+    width: 45%;
+}
+.main-menu-image{
+    width: 100%;
+    height: 100%;
+}
+/* -------------middle text card------------------ */
 .middle-text{
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    background-color: var(--lightgray);
-    background-image: linear-gradient(180deg, var(--lightgray),white);
+    background-color: var(--N100);
+    background-image: linear-gradient(180deg, var(--N100),white);
 }
 .middle-text-inner-div{
     position: relative;
@@ -464,21 +312,41 @@ body{
     background-color: white;
     width: 70%;
 }
-.most-popular-menu-title, .bottom-menu-title{
-    position: relative;
+/* --------------------life school card------------------------------ */
+.life-school-container{
+    padding-top: 70px;
     display: flex;
     flex-direction: row;
-    padding: 50px 140px;
+    justify-content: space-evenly;
 }
-.bottom-menu-title{
-    padding: 50px 90px;
-    justify-content: flex-start;
+.item-1 , .item-2 , .item-3{
+    display: flex;
+    flex-direction: column;
 }
-.most-popular-menu-title{
-    justify-content: center;
+.picture-1{
+    width: 350px;
+    height: 169px;
 }
-.green-span{
-    color:var(--green);
+/* -----------------------follow me card------------------------------------- */
+.follow-me-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+.follow-me{
+    margin: 0px;
+}
+.follow-me-social{
+    margin-left:0;
+    margin-top: 20px;
+}
+/* ------------------------------Some previews from Lala.Kitchen----------------- */
+.follow-me,.most-popular-menu-title{
+    text-align: center;
+    /* letter-spacing: 0.08em; */
+    color:var(--N900);
 }
 .most-popular-menu-items{
     display: flex;
@@ -490,71 +358,89 @@ body{
     margin-right: 15px;
     flex-direction: column;
 }
-.life-school-container{
-    padding-top: 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.item-1 , .item-2 , .item-3{
-    display: flex;
-    flex-direction: column;
-}
-.parent{
-    overflow: hidden;
-    position: relative;
-}
-.child::before {
-    content: ' ';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    display: inline-block;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(./assets/images/item-1.png);
-  }
-  .child:hover{
-    animation-name: example;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
-  }
- 
- 
- 
-  @keyframes example {
-    0%{
-        -ms-transform: scale(1.0);
-        -moz-transform: scale(1.0);
-        -webkit-transform: scale(1.0);
-        -o-transform: scale(1.0);
-        transform: scale(1.0);
-  }
-  50%{
-    -ms-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-  100% {
-    -ms-transform: scale(1.0);
-    -moz-transform: scale(1.0);
-    -webkit-transform: scale(1.0);
-    -o-transform: scale(1.0);
-    transform: scale(1.0);
-  }
-}
-
-.picture-1{
-    width: 350px;
-    height: 169px;
-}
 .item-picture {
     width: 350px;
     height: 324px;
+}
+.most-popular-menu-title{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 50px 140px;
+}
+
+.most-popular-menu-title{
+    justify-content: center;
+}
+.green-span{
+    color:var(--G500);
+}
+/* ------------------crawing for sweets card --------------------------- */
+
+.flippig-card-container{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--N100) ;
+}
+.cake-picture-container{
+    width: 50%;
+}
+.cake-picture{
+    width: 100%;
+    height: 670px;
+}
+.cake-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: var(--N100);
+}
+.cake-text-inner-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 50%;
+}
+.cake-button{
+    text-decoration: none;
+}
+.cake-button-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    height: 56px;
+    font-size: 16px;
+    font-family: Helvetica;
+    font-weight: 400;
+    color: var(--G500);
+    border:2px solid var(--G500);
+    transition: .4s;
+}
+.cake-button-container:hover{
+    border: 2px solid var(--G600);
+    background-color: #F5FAEB;
+    box-shadow: 0 12px 16px 0 rgba(56,102,0,0.3);
+}
+.cake-icon{
+    margin-right: 8px;
+}
+/* --------------------Our Cake kitchen------------------------------ */
+.bottom-menu-title{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 50px 140px;
+    padding: 50px 140px;
+    justify-content: flex-start;
 }
 /* ------------------promoted card container------------------- */
 .promoted-card-container{
@@ -611,18 +497,70 @@ body{
     position: absolute;
     left: 0px;
     bottom: 0px;
-    width: 128px;
+    width: 148px;
     height: 56px;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 16px 24px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
     background: var(--G500);
     color: white;
 }
 /* ------------------promoted card container------------------- */
+
+
+/* -------------------------animation scale picture------------------- */
+.parent{
+    overflow: hidden;
+    position: relative;
+}
+.child::before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./assets/images/item-1.png);
+  }
+  .child:hover{
+    animation-name: example;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes example {
+    0%{
+        -ms-transform: scale(1.0);
+        -moz-transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+        -o-transform: scale(1.0);
+        transform: scale(1.0);
+  }
+  50%{
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -ms-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    -o-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
 
 /* -----------------bottom-section------------------------------------- */
 .bottom-section-container{
@@ -737,85 +675,90 @@ body{
     /* letter-spacing: 0.03em; */
     color: var(--N700);
 }
-
 /* -----------------bottom-section-----end-------------------------------- */
-
-.follow-me-container{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 70px;
-}
-
-.follow-me-social{
-    margin-left:0;
-    margin-top: 20px;
-}
-.flippig-card-container{
-    position: relative;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row ;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--lightgray) ;
-}
-.cake-picture-container{
-    width: 50%;
-}
-.cake-picture{
-    width: 100%;
-    height: 670px;
-}
-.cake-text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    background-color: var(--lightgray) !important;
-}
-.cake-text-inner-container{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    height: 50%;
-}
-.cake-button{
-    text-decoration: none;
-}
-.cake-button-container{
+/* ----------------------footer and about me------------------------ */
+.footer-container{
+    padding-top: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 190px;
-    height: 56px;
-    font-size: 16px;
-    font-family: Helvetica;
-    font-weight: 400;
-    color: var(--green);
-    border:2px solid var(--green);
-    transition: .4s;
+    height: 526px;
 }
-.cake-button-container:hover{
-    border: 2px solid var(--darkgreen);
-    background-color: #F5FAEB;
-    box-shadow: 0 12px 16px 0 rgba(56,102,0,0.3);
+.footer-logo-container{
+    position: relative;
+    width: 730px;
+    height: 496px;
 }
-.cake-icon{
-    margin-right: 8px;
+.cake-logo-1{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 38px;
+    left: 200px;
+}
+.cake-logo-2{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 38px;
+    left: 632px;
+}
+.two-layer-cake-logo-1{
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    top: 112px;
+    left: 118px;
+}
+.two-layer-cake-logo-2{
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    top: 112px;
+    left: 551px;
 }
 
-/* -----------------------about me container---------------------------- */
+.cooking-food-logo-1{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 35px;
+    left: 44px;
+}
+.cooking-food-logo-2{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 35px;
+    left: 464px;
+}
+.footer-follow-me{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    left: 0px;
+    top: 80px;
+}
+.space{
+    margin-top: 20px;
+}
+.green-space{
+    color: var(--G500);
+}
+.about-me-div{
+    width: 350px;
+    height: 496px;
+}
 .about-me-container{
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 25%;
+    width: 100%;
 }
 .about-me-border-text{
     position: absolute;
@@ -852,8 +795,97 @@ body{
     margin-left: 0;
     margin-top: 20px;
 }
+.about-me-title{
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    /* letter-spacing: 0.09em; */
+    color: var(--N700);
+}
+.about-me-content {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    /* letter-spacing: 0.03em; */
+    color: var(--N700);
+}
+.about-me-signature{
+    font-family: Alex Brush;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    /* letter-spacing: 0.09em; */
+    color: var(--N700);
+}
 /* -----------------------about me container---------------------------- */
-
+/* ------------------no-name-bottom-footer-end------------------------- */
+.no-name{
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 32px;
+}
+.no-name-designer{
+    width: 176px;
+    height: 24px;
+    text-align: center;
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+.no-name-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 391px;
+    height: 40px;
+}
+.left-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    width: 192px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+}
+.right-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 40px;
+}
+.green{
+    color: var(--G500);
+}
+.no-name-social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 200px;
+    justify-content: space-between;
+}
+/* ---------------------------------tulips css--------------------------------- */
 .tulip-big{
     position: absolute;
     display: block; 
@@ -893,20 +925,30 @@ body{
     top: 10px; 
     left: 360px; 
 }
+.tulip-big-8{
+    top: 10px; 
+    left: 260px; 
+}
+.tulip-big-9{
+    top: 200px; 
+    left: 460px; 
+}
+/* -----------------------fliping animation card------------------------ */
 .container{
     position: relative;
-    width: 900px;
-    height: 300px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    height: 340px;
 }
 .middle{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(0,0);
 }
 .card{
     cursor: pointer;
-    width: 50%;
+    width: 30%;
     height: 100%;
 }
 .front , .back {
