@@ -156,26 +156,7 @@ button{
     width: 103px;
     height: 170px;
 }
-.lala-text{
-    font-family: Niconne !important;
-    font-size: 36px;
-    line-height: 44px;
-    font-style: normal;
-    font-weight: 400;
-    color: var(--G500);
-    letter-spacing: 0.2px;
-    text-align: center;
-}
-.kitchen-text{
-    color: var(--G500);
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.26em;
-}
+
 @media screen and (max-width: 1060px) {
     .navbar {
       flex-direction: column-reverse;
@@ -323,6 +304,15 @@ button{
     display: flex;
     flex-direction: column;
 }
+.life-school-img{
+    overflow: hidden;
+}
+.life-school-img img{
+    transition: transform .6s;
+}
+.life-school-img:hover img{
+    transform: scale(1.08,1.08);
+}
 .picture-1{
     width: 350px;
     height: 169px;
@@ -361,6 +351,14 @@ button{
 .item-picture {
     width: 350px;
     height: 324px;
+    overflow: hidden ;
+    
+}
+.item-picture img{
+    transition: transform .6s;
+}
+.item-picture:hover img{
+    transform: scale(1.08,1.08);
 }
 .most-popular-menu-title{
     position: relative;
@@ -389,6 +387,13 @@ button{
 }
 .cake-picture-container{
     width: 50%;
+    overflow: hidden;
+}
+.cake-picture-container img{
+    transition: transform .6s;
+}
+.cake-picture-container:hover img{
+    transform: scale(1.08,1.08);
 }
 .cake-picture{
     width: 100%;
@@ -454,6 +459,13 @@ button{
     width: 540px;
     height: 468px;
     margin-bottom: 40px;
+    overflow: hidden;
+}
+.promoted-card-image img{
+    transition: transform .6s;
+}
+.promoted-card-image:hover img{
+    transform: scale(1.08,1.08);
 }
 .promoted-card-top-order-button{
     position: absolute;
@@ -579,6 +591,24 @@ button{
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+}
+.tin-section-image{
+    overflow: hidden;
+}
+.tin-section-image img{
+    transition: transform 0.6s;
+}
+.tin-section-image:hover img{
+    transform: scale(1.08,1.08);
+}
+.fat-section-top{
+    overflow: hidden;
+}
+.fat-section-top img{
+    transition: transform 0.6s;
+}
+.fat-section-top:hover img{
+    transform: scale(1.08,1.08) rotate(360deg);
 }
 .fat-section{
     width: 541px;
