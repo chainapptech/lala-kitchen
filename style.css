@@ -195,6 +195,16 @@ button{
         flex-direction: column !important;
         align-items: center;
     }
+    .crawing-card-container{
+        flex-direction: column !important;
+    }
+    .cake-picture-container{
+        width: 90% !important;
+    }
+    .cake-text{
+        width: 90% !important;
+    }
+
 }
 /* --------------------------chef as a service--------------- */
 .main-menu{
@@ -375,7 +385,7 @@ button{
 }
 /* ------------------crawing for sweets card --------------------------- */
 
-.flippig-card-container{
+.crawing-card-container{
     position: relative;
     margin: 0;
     padding: 0;
@@ -383,6 +393,7 @@ button{
     flex-direction: row ;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     background-color: var(--N100) ;
 }
 .cake-picture-container{
@@ -453,11 +464,15 @@ button{
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .promoted-card-image{
     position: relative;
     width: 540px;
     height: 468px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 40px;
     overflow: hidden;
 }
@@ -527,58 +542,12 @@ button{
 }
 /* ------------------promoted card container------------------- */
 
-
-/* -------------------------animation scale picture------------------- */
-.parent{
-    overflow: hidden;
-    position: relative;
-}
-.child::before {
-    content: ' ';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    display: inline-block;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(./assets/images/item-1.png);
-  }
-  .child:hover{
-    animation-name: example;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
-  }
-  @keyframes example {
-    0%{
-        -ms-transform: scale(1.0);
-        -moz-transform: scale(1.0);
-        -webkit-transform: scale(1.0);
-        -o-transform: scale(1.0);
-        transform: scale(1.0);
-  }
-  50%{
-    -ms-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-  100% {
-    -ms-transform: scale(1.0);
-    -moz-transform: scale(1.0);
-    -webkit-transform: scale(1.0);
-    -o-transform: scale(1.0);
-    transform: scale(1.0);
-  }
-}
-
 /* -----------------bottom-section------------------------------------- */
 .bottom-section-container{
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 30px;
 }
@@ -711,9 +680,10 @@ button{
     padding-top: 50px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: 526px;
+    height: auto;
 }
 .footer-logo-container{
     position: relative;
