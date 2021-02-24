@@ -136,16 +136,6 @@ button{
 .anchor{
     text-decoration: none;
 }
-/* .anchor{
-    text-decoration: none;
-    transition: .2s;
-}
-.anchor:hover{
-    transform: scale(1.08,1.08);
-}
-.anchor:active{
-    transform: scale(.9,.9);
-} */
 /* ----------------------------------logo container-------------------- */
 .logo{
     display: flex;
@@ -155,56 +145,6 @@ button{
     margin-top: 20px;
     width: 103px;
     height: 170px;
-}
-
-@media screen and (max-width: 1060px) {
-    .navbar {
-      flex-direction: column-reverse;
-      align-items: center;
-    }
-    .main-menu{
-        flex-direction: column-reverse !important;
-        height: auto !important;
-    }
-    .main-menu-image-container{
-        width: 80% !important;
-        margin: 0;
-    }
-    .main-menu-background{
-        width: 80% !important;
-        margin-right: 0 !important;
-    }
-   
-}
-@media screen and (max-width: 900px) {
-    .most-popular-menu-items{
-        flex-direction: column !important;
-        align-items: center;
-    }
-    .item-picture{
-        width: fit-content !important;
-        height: auto !important;
-    }
-    .item-text-content{
-        text-align: center;
-    }
-    .item-text-title{
-        text-align: center !important;
-    }
-    .life-school-container{
-        flex-direction: column !important;
-        align-items: center;
-    }
-    .crawing-card-container{
-        flex-direction: column !important;
-    }
-    .cake-picture-container{
-        width: 90% !important;
-    }
-    .cake-text{
-        width: 90% !important;
-    }
-
 }
 /* --------------------------chef as a service--------------- */
 .main-menu{
@@ -828,7 +768,7 @@ button{
 /* -----------------------about me container---------------------------- */
 /* ------------------no-name-bottom-footer-end------------------------- */
 .no-name{
-    height: 56px;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -932,6 +872,58 @@ button{
 .tulip-big-9{
     top: 200px; 
     left: 460px; 
+}
+@media screen and (max-width: 1060px) {
+    .navbar {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .main-menu{
+        flex-direction: column-reverse ;
+        height: auto ;
+    }
+    .main-menu-image-container{
+        width: 80% ;
+        margin: 0;
+    }
+    .main-menu-background{
+        width: 80% ;
+        margin-right: 0 ;
+    }
+   
+}
+@media screen and (max-width: 900px) {
+    .most-popular-menu-items{
+        flex-direction: column ;
+        align-items: center;
+    }
+    .item-picture{
+        width: fit-content ;
+        height: auto ;
+    }
+    .item-text-content{
+        text-align: center;
+    }
+    .item-text-title{
+        text-align: center ;
+    }
+    .life-school-container{
+        flex-direction: column ;
+        align-items: center;
+    }
+    .crawing-card-container{
+        flex-direction: column ;
+    }
+    .cake-picture-container{
+        width: 90% ;
+    }
+    .cake-text{
+        width: 90% ;
+    }
+    .no-name{
+        flex-direction: column-reverse;
+    }
+
 }
 /* -----------------------fliping animation card------------------------ */
 .container{
