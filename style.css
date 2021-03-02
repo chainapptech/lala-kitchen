@@ -1,40 +1,9 @@
 @import "styles/typography.css"; 
+@import "styles/colors.css"
 *,*::after,*::before{
     box-sizing: border-box;
 }
-:root{
-    --green: rgb(73,133,0);
-    --darkgreen: rgb(56,102,0);
-    --lightgray:rgb(239, 242, 245);
-    
-    --N100: rgba(239, 242, 245, 1);
-    --N300: rgba(191, 205, 202, 1);
-    --N700: rgba(59, 60, 69, 1);
-    --N900: rgba(31, 37, 45, 1);
-    
-    --G500: rgba(73, 133, 0, 1);
-    --G600: rgba(56, 102, 0, 1);
 
-    --gray:rgb(95,95,95);
-    --darkgray:rgb(33,33,33);
-    --disabledgray:#BFCDCA;
-}
-@font-face {
-    font-family: Niconne;
-    src: url(./assets/fonts/Niconne-Regular.ttf);
-}
-@font-face {
-font-family: Alex Brush;
-src: url(./assets/fonts/AlexBrush-Regular.ttf);
-}
-@font-face {
-    font-family:Lato;
-    src: url(./assets/fonts/Lato-Regular.ttf);
-}
-@font-face {
-    font-family: Marriweather;
-    src: url(./assets/fonts/Merriweather-Regular.ttf);
-}
 /*heders od h1 do h6*/
 body{
     margin: 0px;
