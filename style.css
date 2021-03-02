@@ -926,7 +926,7 @@ button{
 
 }
 /* -----------------------fliping animation card------------------------ */
-.container{
+/* .container{
     position: relative;
     padding-top: 20px;
     display: flex;
@@ -971,5 +971,5 @@ button{
 }
 .card:hover > .back{
     transform: perspective(600px) rotateY(0deg);
-}
+} */
 
