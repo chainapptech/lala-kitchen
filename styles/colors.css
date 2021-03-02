@@ -1,0 +1,37 @@
+:root{
+   /* --green: rgb(73,133,0);
+    --darkgreen: rgb(56,102,0);
+    --lightgray:rgb(239, 242, 245);
+    
+    --N100: rgba(239, 242, 245, 1);
+    --N300: rgba(191, 205, 202, 1);
+    --N700: rgba(59, 60, 69, 1);
+    --N900: rgba(31, 37, 45, 1);
+    
+    --G500: rgba(73, 133, 0, 1);
+    --G600: rgba(56, 102, 0, 1);
+
+    --gray:rgb(95,95,95);
+    --darkgray:rgb(33,33,33);
+    --disabledgray:#BFCDCA;*/
+
+    --G50 : #F5FAEB;
+    --G100: #DAEBB2;
+    --G200: #C6E08A;
+    --G300: #A3D431;
+    --G500: #498500;
+    --G600: #386600;
+
+
+    --Red:     #EB5757;
+    --Orange:  #F2994A;
+    --Yellow : #FFDB5A;
+
+    --N0   : #FFFFFF;
+    --N100 : #EFF2F5;
+    --N200 : #DEE3E6;
+    --N300 : #BFCDCA;
+    --N400 : #7E848A;
+    --N700 : #3B3C45;
+    --N900 : #1F252D;
+}
