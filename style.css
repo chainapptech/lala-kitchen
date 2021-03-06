@@ -1,5 +1,6 @@
 @import "styles/typography.css"; 
-@import "styles/colors.css"
+@import "styles/colors.css";
+
 *,*::after,*::before{
     box-sizing: border-box;
 }
@@ -123,19 +124,24 @@ button{
     align-items: center;
     justify-content: center;
     padding-top: 50px;
+    padding-bottom: 70px;
     width: 100%;
-    height: 580px;
+    height: 650px;
     background-color: var(--N100);
 }
 .main-menu-background{
-    height: 90%;
-    width:32%;
+    height: 92%;
+    width:35%;
     margin-right: 20px;
     background-color: var(--N100);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
 }
-.main-menu-content{
-    color: var(--N700);
+.header-chef{
+    margin: 0px;
+    padding: 0px;
 }
 .main-menu-profile{
     display: flex;
@@ -172,21 +178,27 @@ button{
     font-family: Helvetica;
     font-weight: 400;
     background-color: var(--G500);
-    color:white;
     transition: 0.5s;
 }
 .booking-calendar-button:hover {
     background-color: var(--N100);
-    color: var(--gray);
+    color: var(--N700);
 }
 .booking-calendar-button:hover img{
    filter: none;
+}
+.booking-calendar-button:hover .book-my-calendar-text{
+    color: var(--N900);
 }
 .calendar-logo {
     margin-right: 12px;
 }
 .calendar-logo-img{
     filter: invert(99%) sepia(6%) saturate(282%) hue-rotate(271deg) brightness(115%) contrast(100%);
+    transition: .6s;
+}
+.book-my-calendar-text{
+    color:var(--N0);
     transition: .6s;
 }
 .main-menu-image-container{
@@ -214,7 +226,7 @@ button{
 }
 /* --------------------life school card------------------------------ */
 .life-school-container{
-    padding-top: 70px;
+    padding-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -242,7 +254,8 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 70px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 .follow-me{
     margin: 0px;
@@ -291,6 +304,17 @@ button{
 }
 .green-span{
     color:var(--G500);
+}
+.radio-button-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.radio-button-one  img ,.radio-button-two img{
+    padding-right: 10px;
 }
 /* ------------------crawing for sweets card --------------------------- */
 
@@ -363,8 +387,7 @@ button{
     position: relative;
     display: flex;
     flex-direction: row;
-    padding: 50px 140px;
-    padding: 50px 140px;
+    padding: 90px 140px 20px;
     justify-content: flex-start;
 }
 /* ------------------promoted card container------------------- */
@@ -687,7 +710,7 @@ button{
     flex-direction: column;
     align-items: center;
     height: 450px;
-    border: 1px solid var(--gray);
+    border: 1px solid var(--N700);
 }
 .about-me-picture{
     width: 108px;
@@ -775,6 +798,7 @@ button{
     height: 40px;
     left: 0px;
     top: 0px;
+    cursor: pointer;
 }
 .right-button{
     display: flex;
@@ -783,6 +807,7 @@ button{
     align-items: center;
     width: 175px;
     height: 40px;
+    cursor: pointer;
 }
 .green{
     color: var(--G500);
