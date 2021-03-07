@@ -13,6 +13,7 @@ body{
 button{
     border: 0px;
     background-color: inherit;
+    cursor: pointer;
 }
 /* --------------------------nav bar ------------------------------ */
 .navbar{
@@ -47,12 +48,23 @@ button{
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    transition: .2s;
+    border: 2px solid inherit;
+    transition: transform .2s;
     justify-content: center;
     align-items: center;
 }
+.youtube img , .youtube-real img{
+    opacity: .3;
+}
+.facebook img{
+    transition: transform .2s;
+    filter:none;
+}
 .facebook:hover ,.instagram:hover , .facebook-real:hover, .instagram-real:hover{
-    border:1px solid var(--N900);
+    border:2px solid var(--G500);
+}
+.facebook:hover img,.instagram:hover img, .facebook-real:hover img, .instagram-real:hover img{
+    filter: invert(25%) sepia(30%) saturate(1884%) hue-rotate(50deg) brightness(92%) contrast(104%);
 }
 .contact{
     display: flex;
@@ -62,7 +74,7 @@ button{
     font-size: 16px;
     font-family: Helvetica;
     font-weight: 400;
-    width: 490px;
+    width: 415px;
     height: 56px;
     color: var(--G500);
 }
@@ -73,7 +85,6 @@ button{
     width: 208px;
     height: 56px;
     border:none;
-
     color: var(--G500);
     border: 2px solid var(--G500);
     font-family: Lato;
@@ -81,13 +92,43 @@ button{
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    transition: .3s;
+    transition: 0.3s;
 }
 .book-me:hover {
     border: 2px solid var(--G600);
-    background-color: #F5FAEB;
+    background-color: var(--G50);
     box-shadow: 0 12px 16px 0 rgba(56,102,0,0.3);
 }
+
+.cake-button{
+    text-decoration: none;
+}
+.cake-button-container-green{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 191px;
+    height: 56px;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Lato;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: var(--N0);
+    border:2px solid var(--G500);
+    background-color: var(--G500);
+    transition: .4s;
+}
+.cake-button-container-green:hover{
+    border: 2px solid var(--G600);
+    background-color:var(--G600);
+    box-shadow: 0 12px 16px 0 rgba(56,102,0,0.3);
+}
+.cake-icon{
+    margin-right: 8px;
+}
+
 .cake-calculator{
     display: flex;
     text-align: center;
@@ -131,7 +172,7 @@ button{
 }
 .main-menu-background{
     height: 92%;
-    width:35%;
+    width:36%;
     margin-right: 20px;
     background-color: var(--N100);
     display: flex;
@@ -148,23 +189,40 @@ button{
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
+    transition: .3s;
 }
 .profile-picture{
-    width: 48px;
-    height: 48px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
+    border: 2px solid var(--N300);
+    transition: .3s;
 }
 .profile-text{
     margin-left: 20px;
 }
 .profile-text-name,.profile-text-email{
     margin: 0px;
+    padding: 0px;
 }
 .profile-text-name{
     color: var(--N900);
+    transition: .3s;
 }
 .profile-text-email{
     color: var(--G500);
+}
+.main-menu-profile:hover .profile-picture{
+    border: 2px solid var(--G500);
+}
+.main-menu-profile:hover .profile-text-email{
+    color: var(--G600);
+    text-decoration: underline 2px solid var(--N300);
+   
+}
+.main-menu-profile:hover .profile-text-name{
+    text-shadow: 1px 1px var(--N400);
+   
 }
 .booking-calendar-button{
     display: flex;
@@ -172,38 +230,27 @@ button{
     justify-content: center;
     flex-direction: row;
     margin-top: 10px;
-    width: 390px;
-    height: 44px;
+    width: 447px;
+    height: 56px;
     font-size: 16px;
-    font-family: Helvetica;
+    font-family: Lato;
     font-weight: 400;
     background-color: var(--G500);
     transition: 0.5s;
 }
 .booking-calendar-button:hover {
-    background-color: var(--N100);
-    color: var(--N700);
-}
-.booking-calendar-button:hover img{
-   filter: none;
-}
-.booking-calendar-button:hover .book-my-calendar-text{
-    color: var(--N900);
+    background-color: var(--G600);
+    box-shadow: 0 12px 16px 0 rgba(56,102,0,0.3);
 }
 .calendar-logo {
     margin-right: 12px;
 }
-.calendar-logo-img{
-    filter: invert(99%) sepia(6%) saturate(282%) hue-rotate(271deg) brightness(115%) contrast(100%);
-    transition: .6s;
-}
 .book-my-calendar-text{
     color:var(--N0);
-    transition: .6s;
 }
 .main-menu-image-container{
     height: 100%;
-    width: 45%;
+    width: 42%;
 }
 .main-menu-image{
     width: 100%;
@@ -237,12 +284,6 @@ button{
 }
 .life-school-img{
     overflow: hidden;
-}
-.life-school-img img{
-    transition: transform .6s;
-}
-.life-school-img:hover img{
-    transform: scale(1.08,1.08);
 }
 .picture-1{
     width: 350px;
@@ -287,10 +328,10 @@ button{
     
 }
 .item-picture img{
-    transition: transform .6s;
+    transition: transform .12s;
 }
 .item-picture:hover img{
-    transform: scale(1.08,1.08);
+    transform: scale(1.25,1.25);
 }
 .most-popular-menu-title{
     position: relative;
@@ -326,7 +367,6 @@ button{
     flex-direction: row ;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
     background-color: var(--N100) ;
 }
 .cake-picture-container{
@@ -334,14 +374,13 @@ button{
     overflow: hidden;
 }
 .cake-picture-container img{
-    transition: transform .6s;
+    transition: transform .12s;
 }
 .cake-picture-container:hover img{
-    transform: scale(1.08,1.08);
+    transform: scale(1.22,1.22);
 }
 .cake-picture{
     width: 100%;
-    height: 670px;
 }
 .cake-text{
     display: flex;
@@ -409,10 +448,10 @@ button{
     overflow: hidden;
 }
 .promoted-card-image img{
-    transition: transform .6s;
+    transition: transform .12s;
 }
 .promoted-card-image:hover img{
-    transform: scale(1.08,1.08);
+    transform: scale(1.22,1.22);
 }
 .promoted-card-top-order-button{
     position: absolute;
@@ -471,6 +510,11 @@ button{
     letter-spacing: 0.03em;
     background: var(--G500);
     color: white;
+    transition: .3s;
+}
+.promoted-card-text-button:hover{
+    background-color:var(--G600);
+    box-shadow: 0 12px 16px 0 rgba(56,102,0,0.3);
 }
 /* ------------------promoted card container------------------- */
 
@@ -711,6 +755,7 @@ button{
     align-items: center;
     height: 450px;
     border: 1px solid var(--N700);
+    border-radius: 5px;
 }
 .about-me-picture{
     width: 108px;
@@ -909,15 +954,14 @@ button{
         flex-direction: column ;
     }
     .cake-picture-container{
-        width: 90% ;
+        width: 80% ;
     }
     .cake-text{
-        width: 90% ;
+        width: 80% ;
     }
     .no-name{
         flex-direction: column-reverse;
     }
-
 }
 /* -----------------------fliping animation card------------------------ */
 /* .container{
