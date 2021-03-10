@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cake-calculator.css">
+    <title>cake-calcularor.html</title>
+</head>
+<body>
+    <!-- -------------------------------------navbar------------------------------ -->
+    <div class="navbar">
+
+        <div class="social">
+            <button class="facebook">
+                
+                    <img  src="./assets/icons/facebook.svg" alt="facebook">
+               
+            </button>
+            <button class="instagram">
+               
+                    <img  src="./assets/icons/instagram.svg" alt="instagram">
+              
+            </button>
+            <button class="youtube">
+                <a href="#">
+                    <img src="./assets/icons/youtube.svg" alt="youtube">
+                </a>
+            </button>
+        </div>
+        <div class="contact">
+            <a class="anchor" href="#">
+                <button class="book-me" > 
+                    <div class="calendar-logo">
+                        <img src="./assets/icons/calendar-green-svg.svg" alt="logo">
+                     </div>
+                     <div class="book-me-text"> <!--naziv klase nije isti ko css-->
+                         Book my calendar<!--da li ovo treba da ima svoju klasu? -->
+                     </div>
+                </button >
+            </a>
+            <a href="#" class="cake-button">
+                <button class="cake-button-container-green">
+                   <div class="cake-icon">
+                       <img src="./assets/icons/cake-logo-white.svg" alt="cake-icon">
+                   </div>
+                   <div class="cake-button-text">
+                        Cake calculator
+                   </div>
+                </button>
+            </a>
+        </div>
+
+    </div>
+    <!-- -----------------------------logo container--------------------------- -->
+    <div class="logo-container">
+        
+        <div class="logo">
+           <img src="./assets/icons/Lala-lofo.svg" alt="lala-logo">
+        </div>
+       
+    </div>
+
+    <!-- --------------------cake calculator----------------------------------- -->
+    
+    <div class="title-container">
+        <div class="back-nome-button" onclick="navigateUrl()">
+            <button> <span></span> <p>Back to home page</p></button>
+        </div>
+        <div class="title-text">
+            <h1>Cake calculator</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="input-field-container">
+            <label for="input"><h5 style="margin: 4px;">Choose cake</h5></label>
+            <input class="input-field" id="input" name="input" class="input" type="text" onkeyup="myFunction()" placeholder="search" title="Type in a name of cake">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <ul id="myUL" class="modal-content">
+                    <li> Coconut rhapsody <span class="close">&times;</span></li>
+                    <li>Cake 2</li>
+                
+                    <li>Cake 3</li>
+                    <li>Cake 4</li>
+                
+                    <li>Cake 5</li>
+                    <li>Cake 6</li>
+                    <li>Cake 7</li>
+                </ul>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis rem 
+                    odio est quaerat nostrum illo nemo officia atque error qui, quas 
+                    et, natus incidunt ad, non labore ea suscipit officiis sequi quod. 
+                    Eligendi ipsa esse corporis inventore ratione repellat quibusdam 
+                    sint nesciunt voluptatem eveniet! Et itaque ut id odio soluta!</p>
+            </div>
+        </div>
+        <div class="selected-cake-container">
+
+        </div>
+    </div>
+   
+    <script>
+        function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('input');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+               
+                txtValue = li[i].textContent || li[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                } else {
+                li[i].style.display = "none";
+                }
+            }
+        }
+        function navigateUrl(){
+            location.replace("./index.html")
+        }
+       
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        var body=document.querySelector("body");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("input");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        items=document.getElementsByTagName("li");
+
+        for(let i=0; i<items.length;i++){
+            
+            items[i].addEventListener("click",event=>{
+                btn.value=items[i].innerText;
+            });
+        }
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            btn.value="";
+            myFunction();
+            modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            console.log(event)
+          if (event.target != input) {
+            modal.style.display = "none";
+          }
+        }
+        
+        </script>
+</body>
+</html>
