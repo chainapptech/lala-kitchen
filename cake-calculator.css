@@ -535,3 +535,26 @@ input:focus   {
     width: 200px;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 1080px) {
+    .navbar {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .title-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-2{
+        margin: 0px;
+        margin-top: 25px;
+        width: 95%;
+    }
+    .no-name{
+        flex-direction: column-reverse;
+    }
+}
