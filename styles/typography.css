@@ -84,13 +84,16 @@ small{
 
 
 .body-caption{
+    margin: 0px;
+    padding: 0px;
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
     line-height: 20px;
     letter-spacing: 0.05em;
-
+    text-transform: uppercase;
+    color: var(--N900);
 }
 
 
