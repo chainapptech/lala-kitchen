@@ -83,7 +83,7 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 208px;
+    max-width: 210px;
     height: 56px;
     border:none;
     color: var(--G500);
@@ -930,7 +930,10 @@ button{
         width: 80% ;
         margin-right: 0 ;
     }
-   
+    .tulip-big-5 , .tulip-big-6{
+        left: 400px;
+    }
+    
 }
 @media screen and (max-width: 900px) {
     .most-popular-menu-items{
@@ -963,6 +966,16 @@ button{
     .no-name{
         flex-direction: column-reverse;
     }
+    .cake-logo-2, .cake-logo-1{
+       display: none;
+    }
+    .two-layer-cake-logo-2 ,.two-layer-cake-logo-1{
+       display: none;
+    }
+    .cooking-food-logo-2 , .cooking-food-logo-1{
+       display: none;
+    }
+   
 }
 /* -----------------------fliping animation card------------------------ */
 /* .container{

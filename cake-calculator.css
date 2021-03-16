@@ -190,6 +190,8 @@ button{
     padding: 9px;
     font-size: 16px;
     font-weight: 400;
+    width: 100%;
+    max-width: 400px;
     cursor: pointer;
     background-image: url(./assets/icons/chevron-down.svg);
     background-position-x: 95%;
@@ -319,7 +321,8 @@ input:focus   {
     flex-direction: row;
     margin: 50px auto;
     margin-bottom: 20px;
-    width: 394px;
+    width: 100%;
+    max-width: 400px;
     height: 56px;
     font-size: 16px;
     font-family: Lato;
@@ -556,5 +559,9 @@ input:focus   {
     }
     .no-name{
         flex-direction: column-reverse;
+    }
+    .input-field-container{
+        width: 90%;
+        max-width: 400px;
     }
 }
