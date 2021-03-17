@@ -82,7 +82,7 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 208px;
+    width: 200px;
     height: 56px;
     border:none;
     color: var(--G500);
@@ -111,8 +111,9 @@ button{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 191px;
+    width: 200px;
     height: 56px;
+    margin-top: 0px;
     font-size: 16px;
     line-height: 24px;
     font-family: Lato;
@@ -541,8 +542,12 @@ input:focus   {
 
 @media screen and (max-width: 1080px) {
     .navbar {
-      flex-direction: column-reverse;
-      align-items: center;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: auto;
+      }
+    .social{
+          height: auto;
     }
     .title-container{
         flex-direction: column;
@@ -566,6 +571,14 @@ input:focus   {
     }
 }
 @media screen and (max-width: 700px) {
+    .contact{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .cake-button-container-green{
+        margin-top: 15px;
+    }
     .selected-cake-container{
         flex-direction: column;
     }
