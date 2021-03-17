@@ -450,6 +450,7 @@ button{
     overflow: hidden;
 }
 .promoted-card-image img{
+    width: 100%;
     transition: transform .12s;
 }
 .promoted-card-image:hover img{
@@ -466,7 +467,7 @@ button{
     padding: 8px 16px;
     width: 132px;
     height: 40px;
-    background: #FFDB5A;
+    background: var(--Yellow);
 }
 .promoted-card-top-order-button-icon{
     margin-right: 8px;
@@ -943,15 +944,14 @@ button{
     }
     .promoted-card-image{
         position: relative;
-        width: 95%;
+        width: 80%;
         height: auto;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         margin-bottom: 10px;
         overflow: hidden;
-        margin-left: auto;
-        margin-right: auto;
+        
     }
     .promoted-card-text-container{
         width: 95%;
