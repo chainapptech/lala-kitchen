@@ -83,7 +83,7 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 210px;
+    width: 210px;
     height: 56px;
     border:none;
     color: var(--G500);
@@ -231,7 +231,8 @@ button{
     justify-content: center;
     flex-direction: row;
     margin-top: 10px;
-    width: 447px;
+    width: 85%;
+    max-width: 447px;
     height: 56px;
     font-size: 16px;
     font-family: Lato;
@@ -538,7 +539,18 @@ button{
     justify-content: space-between;
     flex-direction: column;
 }
+.fat-section{
+    width: 540px;
+    height: 562px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
 .tin-section-image{
+    width: 100%;
     overflow: hidden;
 }
 .tin-section-image img{
@@ -548,6 +560,7 @@ button{
     transform: scale(1.08,1.08);
 }
 .fat-section-top{
+    width: 100%;
     overflow: hidden;
 }
 .fat-section-top img{
@@ -556,16 +569,7 @@ button{
 .fat-section-top:hover img{
     transform: scale(1.08,1.08) rotate(360deg);
 }
-.fat-section{
-    width: 541px;
-    height: 562px;
-    margin-left: 10px;
-    margin-right: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-}
+
 .tin-section-top{
     display: flex;
     align-items: center;
@@ -976,6 +980,21 @@ button{
        display: none;
     }
    
+}
+@media screen and (max-width: 600px){
+    .bottom-section-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .fat-section{
+        width: 95%;
+        height: auto;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 /* -----------------------fliping animation card------------------------ */
 /* .container{
